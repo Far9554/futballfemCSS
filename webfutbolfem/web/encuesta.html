@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> DAM </title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Mario">
+        <meta name="keywords" content="DAM M4 web">
+        <meta name="description" content="Practica M4">
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+	</head>
+	<body>
+		<header>
+            <img src="../img/Main_IBERDROLA.png" height="100" alt="Imatge Primera Iberdrola">
+        </header>
+        <nav>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a class="link" href="index.html">Home</a></th>
+                        <th><a class="link" href="classif.html">Classificatoria</a></th>
+                        <th><a class="link" href="resultats.html">Resultats</a></th>
+                        <th><a class="link" href="galeria.html">Galeria</a></th>
+                        <th><a class="link" href="Infogeneral.html">Informacio</a></th>
+                        <th><a class="link" href="planter.html">Planter</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </nav>
+		<main>
+            <form action="./validaenquesta.php" method="POST">
+                <!--Email (Obligatorio)-->
+                <p>
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" id="idEmail" name="correo" placeholder="Introduce tu correo electrónico" required>
+                </p>
+                <!--Nombre usuario (Obligatorio)-->
+                <p>
+                    <label for="user"><b>Nom Complet</b></label>
+                    <input id="user" type="text" placeholder="Introduce tu Nombre" name="uname" required>
+                </p>
+                <!--Puntuacion del 1 al 5-->
+                <p>
+                    <label for="idPunt"><b>Puntuacio Web</b></label>
+                    <input id="idPunt" name="altura" type="number" min="1" max="5" step="1" placeholder="Introduce tu valoracion">
+                </p>
+                <p>
+                    <label for="Color"><b>Color ideal</b></label>
+                    <input id="Color" name="color1" type="color" value="#FFFF00">
+                </p>
+                <!--Desplegable Opinion-->
+                <label for="Val"><b>Color ideal</b></label>
+                <select id="Val" name="Valoracion Global">
+                    <option value="1">Excelent</option>
+                    <option value="2">Notable</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Dolent</option>
+                </select>
+                <!--Observaciones-->
+                <p>
+                    <h4>Observacion</h4>
+                    <input type="text" id="IdObs" name="nombre" placeholder="Introduce tu opinion" autofocus size="150" maxlength="200">
+                </p>
+                <!--Subir Formulario-->
+                <p>
+                    <input value="Reset" type="reset">
+                    <button type="submit">Enviar</button>
+                </p>
+              </form>
+        </main>
+        <footer>
+            <img href="https://www.facebook.com/Primeraiberdrola/%22%3E" src="../img/Facebook.png" alt="Facebook" height="40"></img>
+            <img href="https://www.instagram.com/primeraiberdrola/?hl=es%22%3E" src="../img/instagram.png" alt="instagram" height="40"></img>
+            <img href="https://twitter.com/PrimerIberdrola?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor%22%3E" src="../img/twitter.png" alt="Twitter" height="40"></img>
+            <p>IBERDROLA Copyright &copy; 2019 -- Iberdrola España, S.A.U. -- Telf: 95758355</p>
+        </footer>
+    </body>	
+</html>
